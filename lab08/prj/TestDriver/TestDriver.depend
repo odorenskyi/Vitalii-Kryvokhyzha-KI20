@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1616602769 source:/home/vetal/Git_repositories/Vitalii-Kryvokhyzha-KI20/lab08/prj/TestDriver/main.cpp
+	<iostream>
+	"ModulesKrivokhizha.h"
+
