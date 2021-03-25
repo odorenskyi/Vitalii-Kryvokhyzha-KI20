@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1616697732 source:e:\доренський\krivokhizha_task\main.cpp
+	<iostream>
+	<windows.h>
+	"ModulesKrivokhizha.h"
+
