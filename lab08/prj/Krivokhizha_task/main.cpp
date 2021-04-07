@@ -1,65 +1,72 @@
 #include <iostream>
-#include <windows.h>
 #include "ModulesKrivokhizha.h"
+#include <locale.h>
+#include <windows.h>
 
 using namespace std;
 
 void copyright()
 {
-    cout << "Krivokhizha Vitalii. CNTU 2021. ©" << endl;
+    cout << "Krivokhizha Vitalii. CNTU 2021. :copyright:" << endl;
 }
 
 void logicalExpression(char a, char b, bool result)
 {
-    cout << "Ââåä³òü ñèìâîë ¹1: ";
+    cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» a: ";
     cin >> a;
-    cout << "Ââåä³òü ñèìâîë ¹2: ";
+    cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» b: ";
     cin >> b;
-    if(a + 1 <= b){
-        result = 1;
-    }
-    else{
-        result = 0;
-    }
-    cout << "à = "<< a << endl << "b = " << b << endl;
-    cout << "Result: " << result;
+    cout << "a + 1 <= b: " << boolalpha << (a + 1 <= b) << endl;
 }
 
-float functionNumberSystem(float x, float y, float z, float S)
+float functionNumberSystem(int x, int y, int z, int S)
 {
-    cout << "Ââåä³òü ÷èñëî x: ";
+    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ x(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
     cin >> x;
-    cout << "Ââåä³òü ÷èñëî y: ";
-    cin >> y;
-    cout << "Ââåä³òü ÷èñëî z: ";
-    cin >> z;
-    cout << "X ó ø³ñòíàäöÿòêîâ³é ø³ñòíàäöÿòêîâ³é ñèñòåì³ ñ÷èñëåííÿ - " << hexfloat << x << endl;
-    cout << "Y ó ø³ñòíàäöÿòêîâ³é ø³ñòíàäöÿòêîâ³é ñèñòåì³ ñ÷èñëåííÿ - " << hexfloat << y << endl;
-    cout << "Z ó ø³ñòíàäöÿòêîâ³é ø³ñòíàäöÿòêîâ³é ñèñòåì³ ñ÷èñëåííÿ - " << hexfloat << z << endl;
 
+    while (x < 0){
+            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ x(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cin >> x;
+           }
+    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ y(Ð§Ð¸ÑÐ»Ð¾ y Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+    cin >> y;
+
+    while (y < 0){
+            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ y(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cin >> y;
+           }
+    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ z(Ð§Ð¸ÑÐ»Ð¾ z Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+    cin >> z;
+
+    while (z < 0){
+            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ z(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cin >> z;
+           }
+
+    cout << "X Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << x << endl;
+    cout << "X Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << x << endl << endl;
+    cout << "Y Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << y << endl;
+    cout << "Y Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << y << endl << endl;
+    cout << "Z Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << z << endl;
+    cout << "Z Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << z << endl << endl;
     S = s_calculation(x, y, z);
-    cout << "Ðåçóëüòàò S ó ø³ñòíàäöÿòêîâ³é ñèñòåì³: " << hexfloat << S << endl;
+    cout << "\n S = " << s_calculation(x, y, z) << endl;
 }
 
 int main()
 {
-    SetConsoleOutputCP(1251);
-    SetConsoleCP(1251);
-
+    setlocale(LC_ALL, "ukr");
     copyright();
     char a;
     char b;
-    float x = 0;
-    float y = 0;
-    float z = 0;
-    float S = 0;
+    int x = 0;
+    int y = 0;
+    int z = 0;
+    int S = 0;
     bool result;
-
     logicalExpression(a, b, result);
     cout << endl;
     functionNumberSystem(x, y, z, S);
-
     getchar();
-
     return 0;
 }

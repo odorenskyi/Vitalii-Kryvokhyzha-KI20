@@ -4,3 +4,10 @@
 	<windows.h>
 	"ModulesKrivokhizha.h"
 
+1616697732 ivokhizha.h"
+
+1617800305 source:/home/vetal/Git_repositories/Vitalii-Kryvokhyzha-KI20/lab08/prj/Krivokhizha_task/main.cpp
+	<iostream>
+	"ModulesKrivokhizha.h"
+	<locale.h>
+
