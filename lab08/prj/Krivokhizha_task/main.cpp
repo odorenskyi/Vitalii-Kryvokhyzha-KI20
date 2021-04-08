@@ -7,48 +7,48 @@ using namespace std;
 
 void copyright()
 {
-    cout << "Krivokhizha Vitalii. CNTU 2021. :copyright:" << endl;
+    cout << "Krivokhizha Vitalii. CNTU 2021. (c)" << endl;
 }
 
 void logicalExpression(char a, char b, bool result)
 {
-    cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» a: ";
+    cout << "Ââåäiòü ñèìâîë a: ";
     cin >> a;
-    cout << "Ð’Ð²ÐµÐ´iÑ‚ÑŒ ÑÐ¸Ð¼Ð²Ð¾Ð» b: ";
+    cout << "Ââåäiòü ñèìâîë b: ";
     cin >> b;
     cout << "a + 1 <= b: " << boolalpha << (a + 1 <= b) << endl;
 }
 
 float functionNumberSystem(int x, int y, int z, int S)
 {
-    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ x(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+    cout << "\n Óâåäiòü x(×èñëî õ ïîâèííî áóòè áiëüøå 0): ";
     cin >> x;
 
     while (x < 0){
-            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ x(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cout << "\n Óâåäiòü x(×èñëî õ ïîâèííî áóòè áiëüøå 0): ";
             cin >> x;
            }
-    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ y(Ð§Ð¸ÑÐ»Ð¾ y Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+    cout << "\n Óâåäiòü y(×èñëî y ïîâèííî áóòè áiëüøå 0): ";
     cin >> y;
 
     while (y < 0){
-            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ y(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cout << "\n Óâåäiòü y(×èñëî õ ïîâèííî áóòè áiëüøå 0): ";
             cin >> y;
            }
-    cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ z(Ð§Ð¸ÑÐ»Ð¾ z Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+    cout << "\n Óâåäiòü z(×èñëî z ïîâèííî áóòè áiëüøå 0): ";
     cin >> z;
 
     while (z < 0){
-            cout << "\n Ð£Ð²ÐµÐ´iÑ‚ÑŒ z(Ð§Ð¸ÑÐ»Ð¾ Ñ… Ð¿Ð¾Ð²Ð¸Ð½Ð½Ð¾ Ð±ÑƒÑ‚Ð¸ Ð±iÐ»ÑŒÑˆÐµ 0): ";
+            cout << "\n Óâåäiòü z(×èñëî õ ïîâèííî áóòè áiëüøå 0): ";
             cin >> z;
            }
 
-    cout << "X Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << x << endl;
-    cout << "X Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << x << endl << endl;
-    cout << "Y Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << y << endl;
-    cout << "Y Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << y << endl << endl;
-    cout << "Z Ñƒ Ð´ÐµÑÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << dec << z << endl;
-    cout << "Z Ñƒ ÑˆiÑÑ‚Ð½Ð°Ð´Ñ†ÑÑ‚ÐºÐ¾Ð²iÐ¹ ÑÐ¸ÑÑ‚ÐµÐ¼i Ñ‡Ð¸ÑÐ»ÐµÐ½Ð½Ñ - " << hex << z << endl << endl;
+    cout << "X ó äåñÿòêîâié ñèñòåìi ÷èñëåííÿ - " << dec << x << endl;
+    cout << "X ó øiñòíàäöÿòêîâié ñèñòåìi ÷èñëåííÿ - " << hex << x << endl << endl;
+    cout << "Y ó äåñÿòêîâié ñèñòåìi ÷èñëåííÿ - " << dec << y << endl;
+    cout << "Y ó øiñòíàäöÿòêîâié ñèñòåìi ÷èñëåííÿ - " << hex << y << endl << endl;
+    cout << "Z ó äåñÿòêîâié ñèñòåìi ÷èñëåííÿ - " << dec << z << endl;
+    cout << "Z ó øiñòíàäöÿòêîâié ñèñòåìi ÷èñëåííÿ - " << hex << z << endl << endl;
     S = s_calculation(x, y, z);
     cout << "\n S = " << s_calculation(x, y, z) << endl;
 }
@@ -68,5 +68,7 @@ int main()
     cout << endl;
     functionNumberSystem(x, y, z, S);
     getchar();
+    system("pause");
+
     return 0;
 }

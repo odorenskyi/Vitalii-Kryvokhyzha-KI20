@@ -1,13 +1,7 @@
 # depslib dependency file v1.0
-1616697732 source:e:\доренський\krivokhizha_task\main.cpp
-	<iostream>
-	<windows.h>
-	"ModulesKrivokhizha.h"
-
-1616697732 ivokhizha.h"
-
-1617800305 source:/home/vetal/Git_repositories/Vitalii-Kryvokhyzha-KI20/lab08/prj/Krivokhizha_task/main.cpp
+1617879093 source:c:\git_repositories\vitalii-kryvokhyzha-ki20\lab08\prj\krivokhizha_task\main.cpp
 	<iostream>
 	"ModulesKrivokhizha.h"
 	<locale.h>
+	<windows.h>
 
