@@ -14,10 +14,10 @@ float s_calculation(float x, float y, float z)
 
 void bofort_actions(int bofortBal)
 {
-    while (bofortBal > 12 || bofortBal < 0){
+   /* while (bofortBal > 12 || bofortBal < 0){
         cout << "¬ведiть бал Ѕофорта(вiн маЇ бути вiд 0 до 12): ";
         cin >> bofortBal;
-    }
+    }*/
 
     switch(bofortBal) {
         case 0: cout << "Ўвидкiсть вiтру: < 0.3 м/c. ’арактеристика вiтру Ч Ўтиль"; break;
@@ -36,15 +36,26 @@ void bofort_actions(int bofortBal)
     }
 }
 
-void socks_actions(int ukrSystem)
-{
+void socks_actions(int ukrSystem){
     switch(ukrSystem) {
-        case 23: cout << "розмiр шкарпеток за системою —Ўј Ч 8, за системою ™— Ч 37/38"; break;
-        case 25: cout << "розмiр шкарпеток за системою —Ўј Ч 9, за системою ™— Ч 39/40"; break;
-        case 27: cout << "розмiр шкарпеток за системою —Ўј Ч 10, за системою ™— Ч 41/42"; break;
-        case 29: cout << "розмiр шкарпеток за системою —Ўј Ч 11, за системою ™— Ч 43/44"; break;
-        case 31: cout << "розмiр шкарпеток за системою —Ўј Ч 12, за системою ™— Ч 45/46"; break;
-        default: cout << "¬ведiть iнший розмiр шкарпеток"; break;
+        case 23:
+            cout << "розмiр шкарпеток за системою —Ўј Ч 8, за системою ™— Ч 37/38";
+            break;
+        case 25:
+            cout << "розмiр шкарпеток за системою —Ўј Ч 9, за системою ™— Ч 39/40";
+            break;
+        case 27:
+            cout << "розмiр шкарпеток за системою —Ўј Ч 10, за системою ™— Ч 41/42";
+            break;
+        case 29:
+            cout << "розмiр шкарпеток за системою —Ўј Ч 11, за системою ™— Ч 43/44";
+            break;
+        case 31:
+            cout << "розмiр шкарпеток за системою —Ўј Ч 12, за системою ™— Ч 45/46";
+            break;
+        default:
+            cout << "¬ведiть iнший розмiр шкарпеток";
+            break;
     }
 }
 
