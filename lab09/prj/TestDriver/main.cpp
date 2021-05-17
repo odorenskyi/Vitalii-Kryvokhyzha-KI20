@@ -11,7 +11,7 @@ int main()
     setlocale(LC_ALL, "ukr");
 
     int number[5] = {1, 5, 55, 557, 5100};
-    int bit_result[5] = {0, 1, 1, 5, 8};
+    int bit_result[5] = {0, 2, 5, 5, 5};
 
     int bofortBal[13] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12};
 

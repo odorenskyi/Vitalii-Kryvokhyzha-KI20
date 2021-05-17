@@ -75,10 +75,10 @@ int bin_zero_counter(int number){
     }
 
     if(!(number & (mask_2 << 7))){
-        cout << "Binary Zero - ";
-        return BinZero;
-    }else{
         cout << "Binary One - ";
         return BinOne;
+    }else{
+        cout << "Binary Zero - ";
+        return BinZero;
     }
 }
