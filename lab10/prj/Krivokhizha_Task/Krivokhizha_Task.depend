@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1621781003 source:c:\git_repositories\vitalii-kryvokhyzha-ki20\lab10\prj\krivokhizha_task\main.cpp
+	<iostream>
+	<windows.h>
+	<ctime>
+	"ModulesKrivokhizha.h"
+

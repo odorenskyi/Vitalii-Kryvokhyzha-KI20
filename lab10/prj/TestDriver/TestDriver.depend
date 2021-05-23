@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1621784096 source:c:\git_repositories\vitalii-kryvokhyzha-ki20\lab10\prj\testdriver\main.cpp
+	<iostream>
+	<fstream>
+	<sstream>
+	<ctime>
+	<string>
+	<windows.h>
+	"ModulesKrivokhizha.h"
+
