@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1621778984 source:c:\git_repositories\vitalii-kryvokhyzha-ki20\lab08\prj\moduleskrivokhizha\main.cpp
+	<cmath>
+	<iostream>
+	<cstring>
+	<fstream>
+	<ctime>
+	<bitset>
+

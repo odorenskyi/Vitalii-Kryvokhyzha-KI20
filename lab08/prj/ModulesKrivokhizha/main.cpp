@@ -1,5 +1,9 @@
 #include <cmath>
 #include <iostream>
+#include <cstring>
+#include <fstream>
+#include <ctime>
+#include <bitset>
 
 using namespace std;
 
@@ -81,4 +85,133 @@ int bin_zero_counter(int number){
         cout << "Binary Zero - ";
         return BinZero;
     }
+}
+
+void task10_1()
+{
+    string path_1 = "in_File.txt";
+    string path_2 = "out_File.txt";
+    string text1 = "Як парость виноградної лози, плекайте мову.\nПильно й ненастанно політь бур'ян.\nЧистіша від сльози вона хай буде.\nВірно і слухняно нехай вона щоразу служить вам.\nХоч і живе своїм живим життям.";
+    string text2;
+    char c;
+    int pos = 0;
+
+    cout << text2 << endl;
+    ofstream out_File;
+    ifstream in_File;
+    out_File.open(path_2, ofstream::app);
+    in_File.open(path_1);
+
+    if(!out_File.is_open())
+    {
+        cout << "Помилка відкриття файлу!";
+    }
+    else{
+        cout << "Успішне відкриття файлу";
+        out_File << "Krivokhizha Vitalii. CNTU 2021. Ukraine. Kropivnitskii. (c)\n";
+        int a = rand() % 90 + 10;
+        out_File << a << "\n";
+
+        if(!in_File.is_open())
+        {
+            cout << "Помилка відкриття файлу!";
+        }
+        else{
+            while(!in_File.eof())
+            {
+                in_File.get(c);
+                text2 += c;
+            }
+
+            pos = text2.find(text1);
+            if(pos != -1)
+            {
+                out_File << "Помилок в тексті не має" << "\n";
+            }
+            else{
+                out_File << "Допущені помилки в тексті" << "\n";
+            }
+        }
+    }
+
+    out_File.close();
+    in_File.close();
+}
+
+void task10_2()
+{
+    string path_1 = "in_File.txt";
+    ofstream in_File;
+    in_File.open(path_1, ios_base::app);
+
+    if(!in_File.is_open())
+    {
+        cout << "Помилка відкриття файлу!";
+    }
+    else
+    {
+        cout << "Успішне відкриття файлу";
+        time_t     now = time(0);
+        struct tm  tstruct;
+        char       buf[80];
+        tstruct = *localtime(&now);
+        strftime(buf, sizeof(buf), "%d.%m.%Y", &tstruct);
+
+        in_File << "\n\nДата дозапису інформації: " << buf;
+    }
+    in_File.close();
+}
+
+void task10_3()
+{
+    string path_1 = "out_File.txt";
+    ofstream out_File;
+    int x = 0;
+    int y = 0;
+    int z = 0;
+    int b = 0;
+
+    out_File.open(path_1, ios_base::app);
+
+    if(!out_File.is_open())
+    {
+        cout << "Помилка вiдкриття файлу!";
+    }
+
+    else
+    {
+        cout << "Успішне відкриття файлу\n";
+
+        while(x < 1)
+        {
+
+            cout << "Уведiть число x, яке бiльше за 1: ";
+            cin >> x;
+        }
+
+        while(y < 1)
+        {
+            cout << "Уведiть число y, яке бiльше 1: ";
+            cin >> y;
+        }
+
+        while(z < 1)
+        {
+
+            cout << "Уведiть число z, яке бiльше за 1: ";
+            cin >> z;
+        }
+
+        while(b <= 1)
+        {
+            cout << "Уведiть натуральне число b: ";
+            cin >> b;
+        }
+
+        out_File << "\n";
+        out_File << "Результат S = " << s_calculation(x, y, z) << endl;
+
+        out_File << "Число b у двійковому коді = " << bitset<32>(b) << endl;
+    }
+    out_File.close();
 }
