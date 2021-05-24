@@ -1,5 +1,4 @@
 #include <iostream>
-#include <windows.h>
 #include <ctime>
 #include "ModulesKrivokhizha.h"
 
@@ -7,8 +6,7 @@ using namespace std;
 
 int main()
 {
-    SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+    setlocale(LC_ALL, "");
 	srand(time(NULL));
 
     task10_1();

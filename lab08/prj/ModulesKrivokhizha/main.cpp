@@ -104,17 +104,17 @@ void task10_1()
 
     if(!out_File.is_open())
     {
-        cout << "Помилка відкриття файлу!";
+        cout << "Помилка вiдкриття файлу!\n";
     }
     else{
-        cout << "Успішне відкриття файлу";
+        cout << "Успiшне вiдкриття файлу\n";
         out_File << "Krivokhizha Vitalii. CNTU 2021. Ukraine. Kropivnitskii. (c)\n";
         int a = rand() % 90 + 10;
         out_File << a << "\n";
 
         if(!in_File.is_open())
         {
-            cout << "Помилка відкриття файлу!";
+            cout << "Помилка вiдкриття файлу!";
         }
         else{
             while(!in_File.eof())
@@ -126,10 +126,10 @@ void task10_1()
             pos = text2.find(text1);
             if(pos != -1)
             {
-                out_File << "Помилок в тексті не має" << "\n";
+                out_File << "Помилок в текстi не має" << "\n";
             }
             else{
-                out_File << "Допущені помилки в тексті" << "\n";
+                out_File << "Допущенi помилки в текстi" << "\n";
             }
         }
     }
@@ -146,18 +146,18 @@ void task10_2()
 
     if(!in_File.is_open())
     {
-        cout << "Помилка відкриття файлу!";
+        cout << "Помилка вiдкриття файлу!\n";
     }
     else
     {
-        cout << "Успішне відкриття файлу";
+        cout << "Успiшне вiдкриття файлу\n";
         time_t     now = time(0);
         struct tm  tstruct;
         char       buf[80];
         tstruct = *localtime(&now);
         strftime(buf, sizeof(buf), "%d.%m.%Y", &tstruct);
 
-        in_File << "\n\nДата дозапису інформації: " << buf;
+        in_File << "\n\nДата дозапису iнформацiї: " << buf;
     }
     in_File.close();
 }
@@ -180,7 +180,7 @@ void task10_3()
 
     else
     {
-        cout << "Успішне відкриття файлу\n";
+        cout << "Успiшне вiдкриття файлу\n";
 
         while(x < 1)
         {
@@ -211,7 +211,7 @@ void task10_3()
         out_File << "\n";
         out_File << "Результат S = " << s_calculation(x, y, z) << endl;
 
-        out_File << "Число b у двійковому коді = " << bitset<32>(b) << endl;
+        out_File << "Число b у двiйковому кодi = " << bitset<32>(b) << endl;
     }
     out_File.close();
 }

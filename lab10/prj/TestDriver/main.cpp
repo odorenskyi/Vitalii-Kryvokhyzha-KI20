@@ -3,15 +3,13 @@
 #include <sstream>
 #include <ctime>
 #include <string>
-#include <windows.h>
 #include "ModulesKrivokhizha.h"
 
 using namespace std;
 
 int main()
 {
-    SetConsoleCP(1251);
-	SetConsoleOutputCP(1251);
+    setlocale(LC_ALL, "");
 	srand(time(NULL));
 
     string path_1 = "out_File.txt";
@@ -29,12 +27,12 @@ int main()
 
     if (path_1 == "out_File.txt" && path_2 == "in_File.txt")
     {
-        cout << "Правильність імен файлів - Passed" << endl;
+        cout << "Правильнiсть iмен файлiв - Passed" << endl;
     }
 
     else
     {
-        cout << "Правильність імен файлів - Failed" << endl;
+        cout << "Правильнiсть iмен файлiв - Failed" << endl;
     }
 
     while(!in_File.eof())
@@ -68,11 +66,11 @@ int main()
 
     if(date == "23.05.2021")
     {
-         cout << "Дата дозапису інформації - Passed" << endl;
+         cout << "Дата дозапису iнформацiї - Passed" << endl;
     }
 
     else{
-         cout << "Дата дозапису інформації - Failed" << endl;
+         cout << "Дата дозапису iнформацiї - Failed" << endl;
     }
 
     cout << "====================================================================================\n";
